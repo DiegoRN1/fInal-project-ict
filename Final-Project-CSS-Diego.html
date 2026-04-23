@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <title>My Portofolio</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+            }
+            nav{
+                background-color: peru;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+            }
+            nav ul{
+                list-style: none;
+                text-align: center;
+            }
+            nav li{
+                display: inline;
+                margin: 0 15px;
+            }
+            nav a{
+                color: aliceblue;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            #home{
+                background-color: bisque;
+                color: black;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            .btn{
+                background-color: peru;
+                color: aliceblue;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 10px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .btn:hover{
+                background-color: rgba(187, 110, 33, 0.878);
+                transform: scale(1.05);
+            }
+            #aboutme{
+                padding: 50px;
+                background-color: burlywood;
+                max-width: 900px;
+                margin: 40px auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px;
+            }
+            .about-container{
+                display: flex;
+                gap: 20px;
+            }
+            #skills{
+                padding: 60px 20px;
+                text-align: center;
+            }
+            .skills-container{
+                display: flex;
+                justify-content: center;
+                gap: 25px;
+            }
+
+            .skill-card{
+                background-color: peru;
+                box-shadow: 0 4px 10px rgba(216, 150, 69, 0.577);
+                padding: 25px;
+                width: 250px;
+                border-radius: 10px;
+            }
+
+            .skill-card:hover{
+                transform: translateY(-5px);
+            }
+
+            #media{
+                padding: 60px 20px;
+                text-align: center;
+            }
+
+            .media-container{
+                justify-content: center;
+            }
+
+            .media-card{
+                margin: auto;
+                background-color: peru;
+                box-shadow: 0 4px 10px rgb(220, 134, 49);
+                padding: 25px;
+                width: 700px;
+                border-radius: 10px;
+            }
+            #project{
+                background-color: #ffffff;
+                padding: 50px 20px;
+                text-align: center;
+            }
+            .project-card{
+                background-color: bisque;
+                color: black;
+                padding: 20px;
+                border-radius: 10px;
+                width: 280px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                margin: 15px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .project-container{
+        display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+            }
+            .contact {
+      background-color: bisque;
+      padding: 40px;
+      text-align: center;
+      max-width: 500px;
+      margin: 60px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      
+      margin-top: 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      border: 1px solid peru;
+      border-radius: 5px;
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 20px;
+      transition: 0.2s;
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1>Hello i'm Diego</h1>
+            <p>Welcome to my personal website</p>
+            <a href="#project">
+                <button class="btn">View my portofolio</button>
+            </a>
+        </section>
+        <section id="aboutme">
+            <h2><center>About Me</center></h2>
+            <div class="about-container">
+            <img src="DiegoForlan.jpeg" alt="Diego" style="width: 180px; border-radius: 10px;">
+            <div class="about-text">
+                <ul>
+                    <li><b>Full Name :</b> Muhammad Diego Rafa Naufal</li>
+                    <li><b>Place, Date Of Birth :</b>Purwodadi, March-05-2011</li>
+                    <li><b>Address :</b>Graha Nirwana Block B no 4</li>
+                    <li><b>Email :</b>Peneduhdiego@gmail.com</li>
+                    <li><b>Phone :</b>+6282123012974</li>
+                </ul>
+                <h2>Summary</h2>
+                <p>I am a student at ABBS Junior High School in Surakarta. My name is Muhammad Diego Rafa Naufal 
+                from class 9A. ICT program. My hobby is playing game. My favorite food is 
+                Steak and when it comes to drinks, I like milk tea.
+                </p>
+            </div>
+        </section>
+<section id="skills">
+            <h2>Skills I'm Learning</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Understanding basic structure and semantic element usage for the web 
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Learning styling techniques, layout design and resposive web design principles
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Learning interactive features and DOM manipulation with vanilla 3S
+                    </p>
+                </div>
+            </div>
+        </section>
+         <section id="media">
+            <h2>My Media</h2>
+            <div class="media-container">
+                <div class="media-card">
+                    <h3>My Favorite Music</h3>
+                    <h4>Lithium - Nirvana</h4>
+                    <audio controls>
+                        <source src="Nirvana - Lithium (Official Music Video) - NirvanaVEVO.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section id="media">
+            <div class="media-container">
+                <div class="media-card">
+                    <h3>My Favorite Video</h3>
+                    <h4>Michael Schumacer 7th Championship</h4>
+                    <video controls width="650px" height="450px">
+                        <source src="Kimi's Incredible Win & Schumacher's 7th Title!  Extended Race Highlights  2004 Belgian Grand Prix - FORMULA 1 (720p, h264).mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <h1>My Project</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Batik National Day Website</h3>
+                    <img src="HariBatikNasional.png" alt="National Batik Day" width="250" height="150">
+                    <p>My first project, create a website for National Batik Day, complete with message, history, and meaning.</p>
+                    <a href="HariBatikNasional.html">
+                    <button class="btn">View Details</button></a>
+                </div>
+                <div class="project-card">
+                    <h3>Surakarta - Heart of Java</h3>
+                    <img src="SurakartaCity.png" alt="Surakarta City" width="250" height="150">
+                    <p>My second project, a website about Surakarta, complete from the tourist destination, history, and cultural heritage of Surakarta.</p>
+                    <a href="Kota-Surakarta.html">
+                    <button class="btn">View Details</button></a>
+                </div>
+                <div class="project-card">
+                    <h3>Daily Praying Application</h3>
+                    <img src="DoaHarian.png" alt="Daily Prayer App" width="250" height="150">
+                    <p>My third project, a website that you can use for daily praying activity.</p>
+                    <a href="doaseharihari.html">
+                    <button class="btn">View Details</button></a>
+                </div>
+            </div>
+        </section>
+  <section id="contact">
+  <div class="contact">
+  <h2><center>Contact Me</center></h2>
+  <form class="contact-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Write your message here...." required></textarea><br><br>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+</section>
+    </body>
+</html>
