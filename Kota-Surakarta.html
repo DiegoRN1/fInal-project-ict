@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <title>Surakarta City</title>
+    <style>
+        body{
+            background-color: #e4e4e4;
+            margin: 0px;
+        }
+
+      :root {
+        --accent: #2c6f8a;
+        --muted: #6b7280;
+        --card: #ffffff;
+      }
+
+      /* Header */
+      header {
+        background: url('surakarta.png') no-repeat center/cover;
+        color: white;
+        padding: 46px 20px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin:0;
+      }
+
+      .container {
+        max-width: 1700px;
+        margin: 10 auto;
+        padding: 0 70px;
+      }
+
+      /* Navigation */
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+
+      .navlinks a {
+        color: rgba(255, 255, 255, 0.95);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+        font-size: 20px;
+      }
+
+      .navlinks a:hover {
+        color: #ffffff;
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+
+      .hero .text {
+        flex: 1;
+        min-width: 260px;
+      }
+
+      .hero h1 {
+        margin: 0 0 12px 0;
+        font-size: 2.2rem;
+        line-height: 1.3;
+      }
+
+      .hero p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 16px;
+        background: #fff;
+        color: var(--accent);
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .btn:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      /* Main Content */
+      main {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: Georgia, serif;
+        font-size: 17px;
+        line-height: 1.7;
+        color: #333;
+      }
+
+      main p {
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(12, 22, 36, 0.06);
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+      /* Footer */
+      footer {
+        padding: 20px 0;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.95rem;
+        border-top: 1px solid #ddd;
+        margin-top: 40px;
+      }
+
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="navlinks">
+            <a href="Kota-Surakarta.html">About</a>
+            <a href="History-of-Surakarta.html">History</a>
+            <a href="Cultural-Heritage-of-Surakarta.html">Cultural</a>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div class="text">
+            <h1>Surakarta - Heart of Javanese Culture</h1>
+            <p>
+              <a class="btn" href="#attractions">Explore Attractions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>About Surakarta</h2>
+        <p>
+          Surakarta City, also known as Solo, is a city in Central Java,
+          Indonesia, with an area of ​​44.04 km². In 2020, Surakarta had a
+          population of 522,364, with a density of 11,861 people/km². By the end
+          of 2024, Surakarta's population was projected to reach 589,242.
+        </p>
+        <p>
+          This city is the third-largest city in southern Java, after Malang in
+          East Java and Bandung in West Java, by population. The eastern side of
+          the city is crossed by the river immortalized in one of the keroncong
+          songs, Bengawan Solo. The city is part of the Greater Solo region,
+          where it serves as the main city.
+        </p>
+        <p>
+          Along with Yogyakarta, Surakarta was the heir to the Islamic Mataram
+          Kingdom, which was divided through the Treaty of Giyanti in 1755,
+          making Surakarta the residence of Susuhunan Pakubuwana and Adipati
+          Mangkunegara.
+        </p>
+      </section>
+
+      <section id="attractions">
+      <h2>Top Tourist Attractions</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="Final-Project-CSS/keraton1.jpg" alt="Keraton Surakarta" />
+          <h3>Kraton Kasunanan (Keraton Surakarta)</h3>
+          <p>The royal palace complex where you can see Javanese architecture, royal artifacts, and sometimes traditional performances.</p>
+        </article>
+
+        <article class="card">
+          <img src="Final-Project-CSS/puramangkunegara2.jpeg.jpg" alt="Pura Mangkunegaran" />
+          <h3>Pura Mangkunegaran</h3>
+          <p>A smaller princely palace with beautiful pendopo halls and a museum of Mangkunegaran treasures.</p>
+        </article>
+
+        <article class="card">
+          <img src="Final-Project-CSS/museum3.jpeg.jpg" alt="Batik" />
+          <h3>Batik Museums & Batik Villages</h3>
+          <p>Surakarta is famous for batik. Visit museums and batik neighborhoods like Laweyan and Kauman to see artisans at work and buy authentic textiles.</p>
+        </article>
+
+        <article class="card">
+          <img src="Final-Project-CSS/pasargede4.jpeg.jpg" alt="Pasar Gede" />
+          <h3>Pasar Gede</h3>
+          <p>A historic traditional market where you can taste local food and experience daily life in Solo.</p>
+        </article>
+
+        <article class="card">
+          <img src="Final-Project-CSS/sriwedari5.jpeg.jpg" alt="Taman Sriwedari" />
+          <h3>Taman Sriwedari</h3>
+          <p>Sriwedari Park is a park located in Laweyan District, Surakarta City. Since the era of Pakubuwana X, Sriwedari Park has been the venue for the traditional entertainment of "Night of Selikuran."</p>
+        </article>
+
+        <article class="card">
+          <img src="Final-Project-CSS/sangiran6.jpeg.jpg" alt="Museum Sangiran" />
+          <h3>Museum Sangiran</h3>
+          <p>Sangiran Museum of Early Man is an archaeological museum located in two districts, namely Sragen and Karanganyar.</p>
+        </article>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+      <p>The Spirit of Java - Berseri - Mulat sarira angrasa wani</p>
+    </footer>
+  </body>
+</html>
