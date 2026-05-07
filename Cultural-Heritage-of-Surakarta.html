@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Heritage of Surakarta</title>
+    <style>
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Georgia", serif;
+            background: #e4e4e4;
+            color: #333;
+        }
+
+        header {
+            background: url('surakarta.png') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 70px 20px 40px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-family: "Cinzel", serif;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            margin-top: 20px;
+        }
+
+        nav {
+            background: rgba(159, 158, 158, 0.7);
+            padding: 12px 0;
+            position:fixed ;
+            top: 0;
+            left: 0;   
+            right: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav .navlinks a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: "Cinzel", serif;
+            font-size: 20px;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 4px;
+        }
+
+        nav .navlinks a:hover {
+            color: rgba(159, 158, 158, 0.7);
+            border-bottom: 2px solid rgba(159, 158, 158, 0.7);
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        #BatikSolo {
+            width: 420px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .Article-Title {
+            text-align: center;
+            font-family: "Cinzel", serif;
+            font-size: 32px;
+            margin-top: 40px;
+            color: #222;
+        }
+
+        .text {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .text p {
+            margin-bottom: 18px;
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .textfooter {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+            .Article-Title {
+                font-size: 24px;
+            }
+            .text {
+                font-size: 16px;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navlinks">
+                <a href="Kota-Surakarta.html">About</a>
+                <a href="History-of-Surakarta.html">History</a>
+                <a href="Cultural-Heritage-of-Surakarta.html">Cultural</a>
+            </div>
+        </nav>
+        <h1>Cultural Heritage of Surakarta</h1>
+    </header>
+
+    <main>
+        <img src="batik-solo.jpg" id="BatikSolo">
+
+        <section>
+            <div class="text">
+                <p>
+                    Surakarta, also known as Solo, is a city rich in cultural heritage and Javanese tradition.
+                    The Kraton Kasunanan Surakarta, built in 1745, serves as the royal palace and a center for preserving
+                    traditional ceremonies and heirlooms. Another historical landmark, Pura Mangkunegaran, blends Javanese
+                    and European architecture and regularly hosts performances of wayang wong and gamelan music.
+                </p>
+                <p>
+                    The art of wayang kulit (shadow puppetry) and wayang orang (human puppet performance) thrives in the city,
+                    reflecting the deep storytelling tradition of the Javanese people. Music and dance are also integral to
+                    Surakarta’s culture, with gamelan ensembles and sacred dances like <i>Bedhaya Ketawang</i> symbolizing
+                    harmony and spirituality. The city is also renowned for Batik Solo, recognized by UNESCO as an
+                    Intangible Cultural Heritage, featuring intricate motifs such as Sidomukti and Parang Kusumo.
+                </p>
+                <p>
+                    Cultural festivals like Sekaten, Solo Batik Carnival, and Grebeg Sudiro showcase the city’s creativity
+                    and multicultural spirit. In addition, traditional architecture and historical markets such as Pasar Gede
+                    and Loji Gandrung reflect the blend of Javanese, Chinese, and Dutch influences that shape Surakarta’s
+                    unique cultural identity.
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div class="textfooter">
+                <p>The Spirit of Java - Berseri - Mulat sarira angrasa wani</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

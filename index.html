@@ -1,0 +1,408 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+
+    <style>
+        body {
+    background-color: #e6f2e6;
+    color: #1b3b1f;
+}
+
+.container {
+    background-color: transparent;
+}
+.top-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #25482f;
+        }
+
+        .top-header .logo {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #f4f6ef;
+        }
+
+        .top-header nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .top-header nav a {
+            text-decoration: none;
+            color: #f4f6ef;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .top-header nav a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #97b88c;
+            left: 0;
+            bottom: -4px;
+            transition: 0.3s;
+        }
+
+        .top-header nav a:hover {
+            color: #d8e5d5;
+        }
+
+        .top-header nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero-carousel {
+    overflow: hidden;
+}
+
+.hero-slide {
+    height: 100vh;
+    min-height: 500px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #fff;
+}
+
+.hero-slide .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-slide .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 75vh;
+        min-height: 420px;
+    }
+
+    .hero-slide h1 {
+        font-size: 2rem;
+    }
+
+    .hero-slide p {
+        font-size: 1rem;
+    }
+}
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .nav-link {
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #d8e5d5 !important;
+        }
+
+        .btn-primary {
+    background-color: #3a6b3a !important;
+    border-color: #315a31 !important;
+    color: #f4f6ef !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #2e5a2e !important;
+    border-color: #2a4f2a !important;
+    color: #ffffff !important;
+}
+
+        .btn-light {
+            background-color: #cde3cc;
+            border-color: #b0c9b0;
+            color: #1d2d1d;
+        }
+
+        .btn-light:hover,
+        .btn-light:focus {
+            background-color: #b0c9b0;
+            color: #1d2d1d;
+        }
+
+        .card,
+        .card-body,
+        .bg-light {
+            background-color: #edf6ec !important;
+            color: #1b3b1f;
+        }
+
+        .footer-blue {
+            background: linear-gradient(to right, #1f4b26, #25482f, #16361c);
+        }
+
+.footer-title {
+    color: #aec9a4;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-link {
+    color: #d8e5d5;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="top-header p-0">
+  <nav class="navbar navbar-expand-lg w-100" style="background-color: #25482f;">
+    
+    <div class="container-fluid px-4">
+      
+      <a class="navbar-brand text-light fw-semibold" href="#">
+        Final Project Group 2 9A
+      </a>
+
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<header id="home" class="hero-carousel">
+    <div id="heroCarousel"
+         class="carousel slide carousel-fade"
+         data-bs-ride="carousel"
+         data-bs-interval="3000">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('Menu.jpg');">
+                    <div class="overlay"></div>
+
+                    <div class="content text-center">
+                        <h1 class="display-4 fw-bold">ICT Final Project</h1>
+                        <p class="lead">Welcome to our website</p>
+                        <a href="#projects" class="btn btn-light mt-3">
+                            Start Exploring
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('789Grade.png');">
+                    <div class="overlay"></div>
+
+                    <div class="content text-center">
+                        <h1 class="display-4 fw-bold">Our Journey</h1>
+                        <p class="lead">From 7th Grade to 9th Grade 📚</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('setimfoto-removebg-preview1.png');">
+                    <div class="overlay"></div>
+
+                    <div class="content text-center">
+                        <h1 class="display-4 fw-bold">Meet The Team</h1>
+                        <p class="lead">Diego • Briega • Zidane</p>
+
+                        <a href="Project-Akhir-part-5.html" class="btn btn-light mt-3">
+                            View Identity
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</header>
+
+    <div class="container mt-5" id="projects">
+        <h2 class="text-center mb-4">My Journey</h2>
+        <div class="row text-center">
+
+            <div class="col-md-4 mb-3">
+                <div class="card shadow p-3">
+                    <h4>7th Grade</h4>
+                    <a href="Project-Akhir-part-2.html" class="btn btn-primary mt-2">View</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card shadow p-3">
+                    <h4>8th Grade</h4>
+                    <a href="Project-Akhir-part-3.html" class="btn btn-primary mt-2">View</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card shadow p-3">
+                    <h4>9th Grade</h4>
+                    <a href="Project-Akhir-part-4.html" class="btn btn-primary mt-2">View</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <div class="container mt-5" id="about">
+    <div class="card shadow p-4 text-center">
+        <h3>About Us</h3>
+        <p>
+            Our name are Diego, Briega, and Zidane. We are students of ABBS Junior High School, Surakarta.
+        </p>
+        <p>
+            We are a group of students who have undertaken a learning journey in ICT from 7th to 9th grade. During this journey, we have learned various interesting and challenging aspects of information and communication technology.
+        </p>
+        <p>
+            This final project is the result of our hard work in developing various projects, ranging from hardware construction, creating interactive games, exploring the Internet of Things, to building responsive websites using HTML, CSS, and JavaScript.
+        </p>
+        <a href="Project-Akhir-part-5.html" class="btn btn-primary mt-3">
+            View Identity
+        </a>
+    </div>
+</div>
+
+    <div class="container mt-5" id="contact">
+        <div class="card shadow p-4 text-center">
+            <h3>Contact</h3>
+            <p>If you want to know more about our work, please get in touch through our Instagram profiles or visit our project pages.</p>
+            <div class="mt-3">
+                <a href="https://instagram.com/bonfirew2e_" target="_blank" class="btn btn-primary me-2">@bonfirew2e_</a>
+                <a href="https://instagram.com/bea.bdh" target="_blank" class="btn btn-primary me-2">@bea.bdh</a>
+                <a href="https://instagram.com/diegorafa_1" target="_blank" class="btn btn-primary">@diegorafa_1</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-blue text-white py-4 mt-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <!-- About -->
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">About</h5>
+                <p class="mb-0">
+                    Our journey from 7th to 9th grade in ICT. About Construct and Creating game, Internet Of Thing, Creating RC Cars, to Creating HTML Website. We proudly present to you our final ICT project.
+                </p>
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Menu</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="Project-Akhir-part-2.html" class="footer-link">7th Grade</a></li>
+                    <li><a href="Project-Akhir-part-3.html" class="footer-link">8th Grade</a></li>
+                    <li><a href="Project-Akhir-part-4.html" class="footer-link">9th Grade</a></li>
+                    <li><a href="Project-Akhir-part-5.html" class="footer-link">Our Identity</a></li>
+                </ul>
+            </div>
+
+            <!-- Team -->
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Team</h5>
+
+                <div>
+                    <div>
+                        Muhammad Zakiy Zidane N.
+                        <a href="https://instagram.com/bonfirew2e_" target="_blank" class="footer-link">
+                            <i class="bi bi-instagram"></i> @bonfirew2e_
+                        </a>
+                    </div>
+
+                    <div>
+                        Briega Afsar Arsenio Abdullah
+                        <a href="https://instagram.com/bea.bdh" target="_blank" class="footer-link">
+                            <i class="bi bi-instagram"></i> @bea.bdh
+                        </a>
+                    </div>
+
+                    <div>
+                        Muhammad Diego Rafa Naufal |
+                        <a href="https://instagram.com/diegorafa_1" target="_blank" class="footer-link">
+                            <i class="bi bi-instagram"></i> @diegorafa_1
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

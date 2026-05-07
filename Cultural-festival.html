@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nusantara Cultural Festival</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      .project-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 50px 0;
+        flex-wrap: wrap;
+      }
+
+      .project-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        width: 500px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .project-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
+
+      .project-card img {
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .project-card .btn {
+        background-color: #FFC107;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .project-card .btn:hover {
+        background-color: #e0a800;
+        transform: scale(1.05);
+      }
+
+      body::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning fw-bold" href="#">Budaya Nusantara</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rumah-tradisional">Rumah Tradisional</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kuliner-nusantara">Kuliner Nusantara</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="position-relative" id="beranda">
+    <div class="w-100 d-flex align-items-center"
+         style="background: url('Indonesian-Food-Main.jpg') center/cover; height: 575px; position: relative;">
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+        <div class="container position-relative text-white">
+            <h1 class="display-5 fw-bold">Nusantara Cultural Festival</h1>
+            <p class="lead text-warning fw-bold">Menjelajahi Keindahan Rumah tradisional dan kuliner khas Indonesia</p>
+
+            <a href="#selengkapnya" class="btn bg-warning fw-bold">Selengkapnya</a>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-warning text-dark" id="funfact">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Fun Facts Nusantara</h2>
+    <p class="mb-5">Indonesia memiliki kekayaan budaya yang sangat beragam. Berikut beberapa fakta menarik!</p>
+
+    <div class="row justify-content-center">
+
+      <div class="col-6 col-md-3 mb-4">
+        <h1 class="fw-bold counter" data-target="1340">1340</h1>
+        <p>Suku Bangsa</p>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <h1 class="fw-bold counter" data-target="718">718</h1>
+        <p>Bahasa Daerah</p>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <h1 class="fw-bold counter" data-target="38">38</h1>
+        <p>Rumah Adat</p>
+      </div>
+
+      <div class="col-6 col-md-3 mb-4">
+        <h1 class="fw-bold counter" data-target="5300">5300</h1>
+        <p>Kuliner Khas</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="selengkapnya">
+    <div class="project-container">
+      
+
+        <div class="project-card" id="rumah-tradisional">
+          <h3>Rumah Tradisional</h3>
+          <img src="Rumahtradisional.jpg" width="250" height="150" alt="Rumah Tradisional">
+          <p>Rumah adat Nusantara dibangun berdasarkan kebutuhan lingkungan, adat, dan filosofi hidup. Setiap rumah memiliki bentuk, bahan, dan fungsi unik.</p>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#modalrumah">Info Lebih Lanjut</button>
+        </div>
+
+        <div class="project-card" id="kuliner-nusantara">
+          <h3>Kuliner Nusantara</h3>
+          <img src="KulinerNusantara.jpg" width="250" height="150" alt="Kuliner Nusantara">
+          <p>Kuliner Indonesia terkenal dengan cita rasa kompleks hasil perpaduan rempah-rempah. Setiap daerah memiliki makanan khas yang menggugah selera.</p>
+          <button class="btn" data-bs-toggle="modal" data-bs-target="#modalkuliner">Info Lebih Lanjut</button>
+        </div>
+
+    </div>
+</section>
+
+<div class="modal fade" id="modalrumah">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">5 Rumah Adat Paling Populer</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <img src="Joglo.jpeg" class="img-fluid rounded mb-3" alt="Rumah Joglo">
+        <h3>1. Rumah Joglo – Jawa Tengah & DIY</h3>
+        <p>Rumah ini terkenal dengan atap berbentuk trapesium bertingkat dan tiang-tiang besar di tengah yang disebut saka guru.</p>
+
+        <img src="Gadang.jpeg" class="img-fluid rounded mb-3" alt="Rumah Gadang">
+        <h3>2. Rumah Gadang – Sumatera Barat (Minangkabau)</h3>
+        <p>Rumah adat dengan atap runcing melengkung seperti tanduk kerbau. Rumah ini berbentuk panggung dan menjadi simbol matrilineal masyarakat Minang.</p>
+
+        <img src="Tongkonan.jpg" class="img-fluid rounded mb-3" alt="Rumah Tongkonan">
+        <h3>3. Rumah Tongkonan – Toraja, Sulawesi Selatan</h3>
+        <p>Atapnya sangat ikonik, melengkung seperti perahu. Rumah ini bukan sekadar tempat tinggal tetapi lambang status sosial keluarga Toraja.</p>
+
+        <img src="Honai.jpg" class="img-fluid rounded mb-3" alt="Rumah Honai">
+        <h3>4. Rumah Honai – Papua</h3>
+        <p>Rumah berbentuk bundar, terbuat dari kayu dan jerami, dengan pintu kecil dan tanpa jendela—fungsi utamanya menahan dingin pegunungan Papua.</p>
+
+        <img src="Lamin.png" class="img-fluid rounded mb-3" alt="Rumah Lamin">
+        <h3>5. Rumah Lamin – Kalimantan Timur (Dayak)</h3>
+        <p>Rumah panggung panjang yang bisa mencapai 300 meter, dihuni oleh banyak keluarga Dayak. Dindingnya penuh ukiran khas suku Dayak.</p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalkuliner">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Kuliner Nusantara Populer</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+  <img src="Gudeg.jpg" class="img-fluid rounded mb-3" alt="Gudeg">
+  <h3>1. Gudeg – Yogyakarta</h3>
+  <p>Masakan tradisional dari nangka muda yang dimasak lama dengan santan dan gula merah. Cita rasanya manis dan gurih.</p>
+
+  <img src="Papeda.jpg" class="img-fluid rounded mb-3" alt="Papeda">
+  <h3>2. Papeda – Papua</h3>
+  <p>Bubur sagu khas Papua dengan tekstur lengket, disajikan dengan kuah ikan berbumbu kuning.</p>
+
+  <img src="Pempek.jpg" class="img-fluid rounded mb-3" alt="Pempek">
+  <h3>3. Pempek – Palembang</h3>
+  <p>Makanan berbahan ikan dan sagu, disajikan dengan kuah cuko yang asam, pedas, dan manis.</p>
+
+  <img src="Rendang.jpg" class="img-fluid rounded mb-3" alt="Rendang">
+  <h3>4. Rendang – Sumatera Barat</h3>
+  <p>Masakan daging sapi yang dimasak lama dengan santan dan rempah-rempah. Pernah dinobatkan sebagai makanan terenak di dunia.</p>
+
+  <img src="MieAceh.jpg" class="img-fluid rounded mb-3" alt="Mie Aceh">
+  <h3>5. Mie Aceh – Aceh</h3>
+  <p>Mi tebal berkuah kari pedas dengan daging sapi atau seafood. Aromanya kuat dan kaya rempah.</p>
+
+</div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<section id="review" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold text-warning">Review Pengunjung</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Ahnaf</h5>
+            <p class="card-text">"Web ini keren banget! Informasinya jelas, tampilannya elegan, dan foto-fotonya juga berkualitas."</p>
+          </div>
+          <div class="card-footer text-end">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Rafi</h5>
+            <p class="card-text">"Belajar budaya Indonesia jadi lebih menyenangkan. Penjelasan rumah adatnya lengkap!"</p>
+          </div>
+          <div class="card-footer text-end">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Zulfa</h5>
+            <p class="card-text">"Bagian kulinernya bikin lapar... tampilannya rapi dan informatif. Mantap banget!"</p>
+          </div>
+          <div class="card-footer text-end">
+            ⭐⭐⭐⭐☆
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="faq" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning fw-bold">Pertanyaan dari Pengunjung Web</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button text-dark fw-bold" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#faq1">
+            Website ini dibuat untuk apa, ya?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-dark">
+            Web ini dibuat supaya kamu bisa mengenal budaya Nusantara dengan cara yang lebih menarik dan gampang dipahami.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-dark fw-bold" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#faq2">
+            Boleh nggak materi di sini dipakai buat tugas sekolah?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-dark">
+            Tentu boleh! Penjelasannya disusun dengan rapi dan bisa membantu kamu untuk ngerjain tugas budaya atau IPS.
+          </div>
+        </div>
+      </div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed text-dark fw-bold" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#faq3">
+      Apakah nanti akan ada update konten budaya lainnya?
+    </button>
+  </h2>
+  <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body text-dark">
+      Iya! Konten akan terus diperbarui, mulai dari tarian daerah, pakaian adat, sampai cerita rakyat dari berbagai provinsi.
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed text-dark fw-bold" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#faq4">
+      Kalau ada error di website ini, saya lapor ke mana?
+    </button>
+  </h2>
+  <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body text-dark">
+      Kamu bisa melapor melalui kontak pembuat web, atau tinggalkan pesan lewat form masukan yang akan ditambahkan.
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-dark text-white pt-4 mt-5">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning fw-bold">Tentang Kami</h5>
+        <p class="small">
+          Website ini dibuat untuk memperkenalkan keindahan budaya Nusantara, 
+          mulai dari rumah tradisional, kuliner khas, hingga kekayaan budaya lainnya.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning fw-bold">Menu Cepat</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#beranda" class="text-white text-decoration-none">Beranda</a></li>
+          <li><a href="#rumah-tradisional" class="text-white text-decoration-none">Rumah Tradisional</a></li>
+          <li><a href="#kuliner-nusantara" class="text-white text-decoration-none">Kuliner Nusantara</a></li>
+          <li><a href="#faq" class="text-white text-decoration-none">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-warning fw-bold">Ikuti Kami</h5>
+        <div class="d-flex gap-3 fs-4">
+          <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center py-3 mt-2 border-top border-secondary">
+      <p class="mb-0 text-warning fw-bold">© 2025 Budaya Nusantara | Kelompok 3 • 9A</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
