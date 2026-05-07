@@ -1,0 +1,490 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity | Group 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+body {
+    background-color: #e6f2e6;
+    color: #1b3b1f;
+}
+
+.top-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #25482f;
+}
+
+.top-header .logo {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #f4f6ef;
+}
+
+.top-header nav {
+    display: flex;
+    gap: 30px;
+}
+
+.top-header nav a {
+    text-decoration: none;
+    color: #f4f6ef;
+    font-weight: 500;
+    position: relative;
+}
+
+.top-header nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #97b88c;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.top-header nav a:hover {
+    color: #d8e5d5;
+}
+
+.top-header nav a:hover::after {
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(to right, #17381d, #2c5f34, #1f4b26);
+    color: #f4f6ef;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Part 5 hero (image) */
+.hero-identity {
+    position: relative;
+    min-height: 260px;
+    padding: 70px 15px;
+    text-align: center;
+    overflow: hidden;
+    color: #f4f6ef;
+    background-color: #1f4b26;
+}
+
+.hero-identity::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('Identity.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: saturate(1.05);
+    transform: scale(1.02);
+}
+
+.hero-identity::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-identity .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-identity .lead {
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 10px;
+}
+
+
+
+/* Part 5 hero (image) */
+.hero-identity {
+    position: relative;
+    min-height: 260px;
+    padding: 70px 15px;
+    text-align: center;
+    overflow: hidden;
+    color: #f4f6ef;
+    background-color: #1f4b26;
+}
+
+.hero-identity::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('Identity1.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: saturate(1.05);
+    transform: scale(1.02);
+}
+
+.hero-identity::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-identity .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-identity .lead {
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 10px;
+}
+
+
+.card,
+.card-body,
+.bg-light {
+    background-color: #edf6ec !important;
+    color: #1b3b1f;
+}
+
+.profile-card,
+.card {
+    transition: 0.3s;
+}
+
+.profile-card:hover,
+.card:hover {
+    transform: scale(1.05);
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #3a6b3a !important;
+    border-color: #315a31 !important;
+    color: #f4f6ef !important;
+}
+
+.btn-primary:hover {
+    background-color: #2e5a2e !important;
+    border-color: #2a4f2a !important;
+}
+
+.btn-outline-primary {
+    color: #3a6b3a;
+    border-color: #3a6b3a;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3a6b3a;
+    color: #f4f6ef;
+}
+
+.modal-header.bg-primary {
+    background-color: #3a6b3a !important;
+}
+
+.footer-blue {
+    background: linear-gradient(to right, #1f4b26, #25482f, #16361c);
+}
+
+.footer-title {
+    color: #aec9a4;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-link {
+    color: #d8e5d5;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d8e5d5 !important;
+}
+    </style>
+
+</head>
+
+<body>
+
+<header class="top-header p-0">
+  <nav class="navbar navbar-expand-lg w-100" style="background-color: #25482f;">
+    
+    <div class="container-fluid px-4">
+      
+      <a class="navbar-brand text-light fw-semibold" href="#">
+        Final Project Group 2 9A
+      </a>
+
+      <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4 text-center">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Project-Akhir-part-2.html">7th Grade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Project-Akhir-part-3.html">8th Grade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Project-Akhir-part-4.html">9th Grade</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<header class="hero-identity">
+    <div class="container hero-content">
+        <h1 class="fw-bold">Our Identity</h1>
+        <p class="lead">Meet the team behind this project 😎</p>
+    </div>
+</header>
+
+
+
+<div class="container mt-5">
+    <div class="row text-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow p-4 profile-card">
+                <img src="Diego-removebg-preview.png" class="profile-img mx-auto">
+                <h4>Diego</h4>
+                <p>Student at ABBS Junior High School</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#diegoModal">
+                        <i class="bi bi-person"></i> View Profile
+                    </button>
+                    <a href="https://instagram.com/diegorafa_1" target="_blank" class="btn btn-outline-primary">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow p-4 profile-card">
+                <img src="Briega-removebg-preview.png" class="profile-img mx-auto">
+                <h4>Briega</h4>
+                <p>Student at ABBS Junior High School</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#briegaModal">
+                        <i class="bi bi-person"></i> View Profile
+                    </button>
+                    <a href="https://instagram.com/bea.bdh" target="_blank" class="btn btn-outline-primary">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow p-4 profile-card">
+                <img src="zidan-removebg-preview.png" class="profile-img mx-auto">
+                <h4>Zidane</h4>
+                <p>Student at ABBS Junior High School</p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zidaneModal">
+                        <i class="bi bi-person"></i> View Profile
+                    </button>
+                    <a href="https://instagram.com/bonfirew2e_" target="_blank" class="btn btn-outline-primary">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="text-center mt-4 mb-5">
+    <a href="index.html" class="btn btn-primary">Back to Home</a>
+</div>
+
+<div class="modal fade" id="diegoModal" tabindex="-1" aria-labelledby="diegoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="diegoModalLabel">Muhammad Diego Rafa Naufal</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-6"><strong>Full Name:</strong> Muhammad Diego Rafa Naufal</div>
+                    <div class="col-md-6"><strong>Class:</strong> 9A</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6"><strong>Date of Birth:</strong> 5 March 2011</div>
+                    <div class="col-md-6"><strong>Interests:</strong> Coding</div>
+                </div>
+                <div class="mb-3">
+                    <strong>ICT Learning Experience:</strong>
+                    <p>During my ICT studies, I learned the fundamentals of coding such as creating simple programs. I also created small projects like games or simple websites. I felt interested because coding trains logic, although debugging can be quite challenging sometimes.</p>
+                </div>
+                <div class="mb-3">
+                    <strong>Impressions & Message:</strong>
+                    <p>I feel coding is fun and makes me interested to continue learning.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="zidaneModal" tabindex="-1" aria-labelledby="zidaneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="zidaneModalLabel">Muhammad Zakiy Zidane Nurrahman</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-6"><strong>Full Name:</strong> Muhammad Zakiy Zidane Nurrahman</div>
+                    <div class="col-md-6"><strong>Class:</strong> 9A</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6"><strong>Date of Birth:</strong> 13 April 2011</div>
+                    <div class="col-md-6"><strong>Interests:</strong> Coding</div>
+                </div>
+                <div class="mb-3">
+                    <strong>ICT Learning Experience:</strong>
+                    <p>During my ICT studies, I learned about basic coding and how to create simple programs. I also learned to collaborate in groups when working on projects.</p>
+                </div>
+                <div class="mb-3">
+                    <strong>Impressions & Message:</strong>
+                    <p>I feel happy learning coding because it increases my knowledge.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="briegaModal" tabindex="-1" aria-labelledby="briegaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="briegaModalLabel">Briega Arsenio Afsar Abdullah</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col-md-6"><strong>Full Name:</strong> Briega Afsar Arsenio Abdullah</div>
+                    <div class="col-md-6"><strong>Class:</strong> 9A</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6"><strong>Date of Birth:</strong> 2 February 2011</div>
+                    <div class="col-md-6"><strong>Interests:</strong> All Subjects</div>
+                </div>
+                <div class="mb-3">
+                    <strong>ICT Learning Experience:</strong>
+                    <p>During my ICT studies, I learned about IoT and creating simple games. I tried to create a project that connects devices with programs, which I found very interesting.</p>
+                </div>
+                <div class="mb-3">
+                    <strong>Impressions & Message:</strong>
+                    <p>I feel happy learning ICT because I enjoy all the materials learned.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer class="footer-blue text-white py-4 mt-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">About</h5>
+                <p class="mb-0">
+                    Our journey from 7th to 9th grade in ICT. About Construct and Creating game, Internet Of Thing, Creating RC Cars, to Creating HTML Website. We proudly present to you our final ICT project.
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Menu</h5>
+
+    <ul class="list-unstyled mb-0">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="Project-Akhir-part-2.html" class="footer-link">7th Grade</a></li>
+        <li><a href="Project-Akhir-part-3.html" class="footer-link">8th Grade</a></li>
+        <li><a href="Project-Akhir-part-4.html" class="footer-link">9th Grade</a></li>
+        <li><a href="Project-Akhir-part-5.html" class="footer-link">Our Identity</a></li>
+    </ul>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5 class="footer-title">Team</h5>
+
+                <div>
+                    <div>
+                        Muhammad Zakiy Zidane N.
+                        <a href="https://instagram.com/bonfirew2e_" target="_blank" class="footer-link">
+                            <i class="bi bi-instagram"></i> @bonfirew2e_
+                        </a>
+                    </div>
+
+                    <div>
+                        Briega Afsar Arsenio Abdullah
+                        <a href="https://instagram.com/bea.bdh" target="_blank" class="footer-link">
+                            <i class="bi bi-instagram"></i> @bea.bdh
+                        </a>
+                    </div>
+
+                    <div>
+                        Muhammad Diego Rafa Naufal |
+                        <a href="https://www.instagram.com/diegorafa_1/" target="_blank" class="footer-link">
+                            <i class="bi bi-instagram"></i> @diegorafa_1
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

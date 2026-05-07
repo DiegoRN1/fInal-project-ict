@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Extracurricular Registration</title>
+</head>
+<body>
+    <form>
+<h1>🌟 Extracurricular Registration 🌟</h1>
+        <p>
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" required placeholder="your email...">
+        </p>
+        <p>
+            <label>Date Of Birth:</label>
+            <input type="date" name="Date" />
+        </p>
+        <p>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </p>
+        <p>
+            <label>Extracurricular Choice:</label>
+            <select name="activity">
+            <option value="Futsal">⚽ Futsal</option>
+            <option value="Basketball">🏀 Basketball</option>
+            <option value="Scout">🏕️ Scout</option>
+            <option value="Science Club">🔬 Science Club</option>
+        </select>            
+        </p>
+        <p>
+            <label>Practice Day:</label>
+            <select name="day">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+            </select>            
+        </p>
+        <p>
+            <label>Practice Time:</label>
+            <input type="time" name="time">            
+        </p>
+        <p>
+            <label>
+            <input type="checkbox" required>✅I agree with terms and conditions
+            </label>            
+        </p>
+        <p>
+           <button type="submit" class="submit-btn">✨ Register ✨</button>            
+        </p>
+    </form>
+</body>
+</html>
+    <style>
+        body {
+            font-family: "Comic Sans MS", Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            text-align: center;
+            padding: 30px;
+        }
+        h1 {
+            color: #ff4081;
+            text-shadow: 1px 1px #fff;
+        }
+        form {
+            background: #ffffffcc;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 2px solid #ffb347;
+            outline: none;
+        }
+        input:focus, select:focus {
+            border-color: #ff4081;
+            background: #fff3f8;
+        }
+        .submit-btn {
+            margin-top: 15px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #ff7043;
+            transform: scale(1.05);
+        }
+    </style>
