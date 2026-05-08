@@ -6,8 +6,10 @@
 <title>Grade 8th</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <style>
+    
 .bg-success-custom {
     background-color: #25482f !important;
 }
@@ -60,6 +62,7 @@ body {
     color: #f4f6ef;
     text-decoration: none;
     position: relative;
+    font-weight: 500;
 }
 .top-header nav a::after {
     content: "";
@@ -79,6 +82,14 @@ body {
     background-color: #edf6ec !important;
     color: #1b3b1f;
     transition: 0.3s;
+    border-radius: 14px !important;
+    overflow: hidden;
+}
+
+.card img,
+.card video,
+.card-img-top {
+    border-radius: 14px 14px 0 0 !important;
 }
 .card:hover {
     transform: scale(1.05);
@@ -195,6 +206,9 @@ body {
             <a class="nav-link text-light" href="Project-Akhir-part-2.html">7th Grade</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link text-light" href="Project-Akhir-part-3.html">8th Grade</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-light" href="Project-Akhir-part-4.html">9th Grade</a>
           </li>
           <li class="nav-item">
@@ -210,7 +224,7 @@ body {
 <section class="hero-section">
     <div class="container">
         <div class="hero-image">
-            <img src="iotgreen.jpg" alt="8th Grade Projects" class="img-fluid hero-img" />
+            <img src="iotgreen.png" alt="8th Grade Projects" class="img-fluid hero-img" />
             <div class="hero-overlay">
                 <h1 class="fw-bold">My 8th Grade Projects</h1>
                 <p class="lead">Collection of my ICT works</p>
@@ -343,7 +357,7 @@ body {
             <img src="dinogame.png" class="modal-img img-fluid rounded shadow">
             <div class="modal-desc">
               <h6 class="mb-3">Dino Game</h6>
-              <p class="mb-4">A simple implementation of the classic Dino Game using HTML, CSS, and JavaScript. The game features a dinosaur that jumps over cacti obstacles. Players can control the dinosaur with the spacebar.</p>
+              <p class="mb-4">A simple implementation of the classic Dino Game using Arduino The game features a dinosaur that jumps over cacti obstacles. Players can control the dinosaur with the spacebar.</p>
               <a href="https://wokwi.com/projects/420651180704955393" class="btn btn-primary mt-2" target="_blank">Visit Project Demo</a>
             </div>
           </div>
@@ -381,7 +395,8 @@ body {
             <img src="distancesensor.png" class="modal-img img-fluid rounded shadow">
             <div class="modal-desc">
               <h6 class="mb-3">Distance Sensor With LED</h6>
-              <p class="mb-4">Autonomous robot that detects and avoids obstacles using ultrasonic sensors. Features line-following capability and adjustable speed control. Perfect for search & rescue applications.</p>
+              <p class="mb-4">This project uses an HC-SR04 ultrasonic sensor to measure distance with an Arduino Nano. The distance is shown on the LCD display, while the LEDs indicate how close an object is: green for far, yellow for medium, and red for near.
+</p>
               <a href="https://wokwi.com/projects/413000000000000002" class="btn btn-primary mt-2" target="_blank">Visit Project Demo</a>
             </div>
           </div>
@@ -406,13 +421,17 @@ body {
 
         <div class="col-md-4">
             <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center" style="background:#4c8c4a; color:white;">
+                <div class="card-body text-center" style="background:#3a6b3a; color:white;">
                     <h5>Main Components</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent text-white">Motor</li>
-                        <li class="list-group-item bg-transparent text-white">Battery</li>
-                        <li class="list-group-item bg-transparent text-white">Controller</li>
-                        <li class="list-group-item bg-transparent text-white">Remote</li>
+                        <li class="list-group-item bg-transparent text-white">DC Motors</li>
+                        <li class="list-group-item bg-transparent text-white">Motor Driver</li>
+                        <li class="list-group-item bg-transparent text-white">Battery Pack</li>
+                        <li class="list-group-item bg-transparent text-white">Controller Board</li>
+                        <li class="list-group-item bg-transparent text-white">Bluetooth / Receiver Module</li>
+                        <li class="list-group-item bg-transparent text-white">Remote Control / Smartphone App</li>
+                        <li class="list-group-item bg-transparent text-white">Wheels and Chassis</li>
+                        <li class="list-group-item bg-transparent text-white">Connecting Wires</li>
                     </ul>
                 </div>
             </div>
@@ -420,9 +439,11 @@ body {
 
         <div class="col-md-4">
             <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body text-center" style="background:#25482f; color:white;">
+                <div class="card-body text-center" style="background:#3a6b3a; color:white;">
                     <h5>How It Works</h5>
-                    <p>Controlled via remote signal sent to receiver, which drives the motor and wheels.</p>
+                    <p>The RC car works using wireless communication between the remote control and the receiver module.
+                         When a button or joystick is pressed, a signal is sent to the controller. 
+                         The controller then activates the motors to move the car forward, backward, left, or right.</p>
                 </div>
             </div>
         </div>
@@ -431,7 +452,7 @@ body {
 
         <div class="col-md-4">
             <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body" style="background:#cde3cc;">
+                <div class="card-body" style="background:#3a6b3a; color:white;">
                     <h5 class="text-center">Video</h5>
                     <video controls class="w-100 rounded">
                         <source src="Rccarjalan.mp4">
@@ -451,11 +472,12 @@ body {
 
         <div class="col-md-4">
             <div class="card h-100 border-0 shadow-sm">
-                <div class="card-body" style="background:#edf6ec;">
+                <div class="card-body" style="background:#3a6b3a; color:white;">
                     <h5 class="text-center">How to Control</h5>
                     <p class="text-center">
-                        Use the remote control (buttons or joystick) to send radio signals 
-                        to the receiver. The receiver converts signals into motor movement.
+                        Use the remote control or smartphone controller to operate the car. 
+                        The directional buttons or joystick send signals to the receiver, 
+                        allowing the car to move and turn smoothly. The speed and direction depend on the commands given by the user.
                     </p>
                 </div>
             </div>
