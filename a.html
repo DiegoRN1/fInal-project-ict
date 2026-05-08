@@ -1,0 +1,517 @@
+<html>
+<head>
+    <title>Travel Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lugrasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+      body::-webkit-scrollbar{
+        display: none;
+      }
+      .navbar-brand{
+        font-family: "Montserrat", sans-serif;;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+      }
+
+      header{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #bg-video{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        object-fit: cover;
+      }
+
+      .bg{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bg:after{
+        content: "";
+        position: absolute;
+        top:0;
+        width:100%;
+        height: 100vh;
+        opacity: 1;
+        background:rgba(0, 0, 0, 0.5);
+      }
+
+      .video-info{
+        z-index: 99;
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+
+      .video-info h1{
+        font-family: "Kaushan Script", sans-serif;
+        font-size: 6rem;
+        letter-spacing: 2px;
+      }
+
+      .tombol{
+        color: white;
+        transition: 0.2s;
+      }
+      .tombol:hover{
+          transform: scale(1.05);
+        }
+
+      .title{
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Lugrasimo", sans-serif ;
+        font-size: 2.8rem;
+      }
+
+      p, h2, h3{
+        font-family: "Montserrat", sans-serif;
+      }
+
+      h5{
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+      }
+
+      #packages .container .box .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.2s linear;
+      }
+      #packages .container .box .image{
+        overflow: hidden;
+      }
+      #packages .container .box:hover .image img{
+        transform: scale(1.05);
+      }
+
+      .blue{
+        transition: 0.2s;
+      }
+      .blue:hover{
+        transform: scale(1.05);
+      }
+
+      #service .card{
+        background-color: rgb(44, 148, 183);
+        border: none;
+        color: white;
+        transition: 0.2s;
+      }
+      #service .card:hover{
+        background-color: rgb(20, 20, 20);
+        color: yellow;
+      }
+
+      
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-dark fixed-top" class="nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Republic Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigasi">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item "><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tours">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+      <div id="home" class="bg">
+        <video poster="thumbnail.png" id="bg-video" autoplay muted loop class="w-100">
+        <source src="footage.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-info">
+        <h1 class="fw-bold">Java Island</h1>
+        <h5>The heart of Indonesia</h5>
+        <a href="#service" class="btn btn-info btn-lg btn-outline-dark border-0 w-50 rounded mt-5 tombol">Explore</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="service" class="py-5">
+        <div class="container mt-3">
+          <h5>Our Service</h5>
+        <div class="row justify-content-center">
+
+        <div class="col-md-2 mt-3">
+        <div class="card shadow p-4 text-center">
+        <i class="bi bi-building fs-3"></i>
+        <h3 class="mt-3 service-title fs-6">Affordable Hotels</h3>
+        </div>
+        </div>
+
+        <div class="col-md-2 mt-3">
+        <div class="card shadow p-4 text-center">
+        <i class="bi bi-cup-hot fs-3"></i>
+        <h3 class="mt-3 service-title fs-6">Food and Drinks</h3>
+        </div>
+        </div>
+
+        <div class="col-md-2 mt-3">
+        <div class="card shadow p-4 text-center">
+        <i class="bi bi-shield-shaded fs-3"></i>
+        <h3 class="mt-3 service-title fs-6">Safety Guide</h3>
+        </div>
+        </div>
+
+        <div class="col-md-2 mt-3">
+        <div class="card shadow p-4 text-center">
+        <i class="bi bi-airplane fs-3"></i>
+        <h3 class="mt-3 service-title fs-6">Fastest Travel</h3>
+        </div>
+        </div>
+
+        <div class="col-md-2 mt-3">
+        <div class="card shadow p-4 text-center">
+        <i class="bi bi-calendar-check fs-3"></i>
+        <h3 class="mt-3 service-title fs-6">Scheduled</h3>
+        </div>
+        </div>
+
+        <div class="col-md-2 mt-3">
+        <div class="card shadow p-4 text-center">
+        <i class="bi bi-signpost fs-3"></i>
+        <h3 class="mt-3 service-title fs-6">Travel Guide</h3>
+        </div>
+        </div>
+
+        </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5">
+        <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-md-6">
+            <img src="route.jpg" class="img-fluid rounded" alt="about image">
+          </div>
+
+          <div class="col-md-6 p-4">
+            <h2 class="title text-start">About Us</h2> 
+            <p>We provides you with the ultimate vacation experience. 
+              This service helps you choose the perfect route, dining options, and activities. 
+              You'll receive clear information and well-organized travel details. 
+              Enjoy your trip hassle-free, knowing everything is well-organized. 
+              Republic Guide ensures every step of your journey is easy and comfortable.</p>
+
+            <p>You can choose Republic Guide to make your trip more relaxed and focused. 
+              You'll receive clear guidance and a well-organized itinerary. 
+              You can focus on enjoying every place you visit. Republic Guide is ready to accompany you 
+              to make your trip easier and more enjoyable.</p>
+
+            
+            <div class="row text-center my-4">
+            <div class="col-4 my-2">
+            <div class="card py-4 bg-primary text-light fw-bold border none shadow-sm blue">
+                  <h3>100+</h3>
+                  <p>Trusted <br>Partners</p>
+            </div>
+            </div>
+
+            <div class="col-4 my-2">
+            <div class="card py-4 bg-primary text-light fw-bold shadow-sm blue">
+                  <h3>2.000+</h3>
+                  <p>Satisfied <br>Customers</p>
+            </div>
+            </div>
+
+            <div class="col-4 my-2">
+            <div class="card py-4 bg-primary text-light fw-bold shadow-sm blue">
+                  <h3>10</h3>
+                  <p>Years of<br>Experience</p>
+            </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="tours" class="py-5 my-3">
+        <div class="container">
+        <h2 class="title">Our Packages</h2>
+        <div class="row">
+
+        <div class="box col-4">
+        <div class="card shadow sm text-center my-5">
+          <div class="image">
+            <img src="bandung.jpg" class="w-100 rounded-top">
+          </div>
+          <div class="content my-5">
+            <h3 class="fw-bold">Bandung</h3>
+            <p>Paris van Java - culture, economy, and lifestyle <br>You'll find shopping centers offering creative designs and fair prices.</p>
+            <div class="star text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <button class="btn w-50 btn-primary btn-outline-dark border-0 m-4 d-block mx-auto tombol" data-bs-toggle="modal" data-bs-target="#modalbandung">
+              Learn More</button>
+          </div>
+        </div>  
+        </div>
+
+
+        <div class="box col-4">
+        <div class="card shadow sm text-center my-5">
+          <div class="image">
+            <img src="jakarta.jpg" class="w-100 rounded-top">
+          </div>
+          <div class="content my-5">
+            <h3 class="fw-bold">Jakarta</h3>
+            <p>Capital City - Indonesia <br>The city lights and buildings create a vibrant atmosphere along the streets and downtown.</p>
+            <div class="star text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <button class="btn w-50 btn-primary btn-outline-dark border-0 m-4 d-block mx-auto tombol" data-bs-toggle="modal" data-bs-target="#modaljkt">
+              Learn More</button>
+          </div>
+        </div>
+        </div>
+
+        <div class="box col-4">
+        <div class="card shadow sm text-center my-5">
+          <div class="image">
+            <img src="jogja.jpg" class="w-100 rounded-top">
+          </div>
+          <div class="content my-5">
+            <h3 class="fw-bold">Yogyakarta</h3>
+            <p>City of Culture - the center of Javanese culture <br>You can experience well preserved traditions and easily accessible historic areas.</p>
+            <div class="star text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <button class="btn w-50 btn-primary btn-outline-dark border-0 m-4 d-block mx-auto tombol" data-bs-toggle="modal" data-bs-target="#modaljogja">
+              Learn More</button>
+          </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-5">
+        <div class="container">
+          <h5>Frequently Asked Question</h5>
+          <div class="accordion accordion-flush" id="accordionFAQ">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                What are the benefits of using a travel guide?</button></h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">Clearer routes, more efficient time, and more focused activities.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Is this service suitable for family travel??</button></h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">Suitable for families because plans can be arranged to be safe and comfortable.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                How to start the service?</button></h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body">determine the destination available in our service for further information contact us.</div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light pt-5">
+    <div class="container px-5">
+        <div class="row">
+
+            <div class="col-6 col-lg-4">
+                <h3 class="fw-bold">Republic Guide</h3>
+                <p class="pt-2">321, Krusty Crab, Bikini Bottom.</p>
+                <p class="mb-2"><i class="bi bi-person-gear"></i>   0987654321</p>
+                <p><i class="bi bi-telephone"></i>   1234567890</p>
+            </div>
+
+            <div class="col">
+                <h4>Menu</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Home</li>
+                    <li class="py-1">Service</li>
+                    <li class="py-1">About</li>
+                    <li class="py-1">Packages</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>More</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Landing Pages</li>
+                    <li class="py-1">FAQs</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>Categories</h4>
+                <ul class="list-unstyled pt-2">
+                    <li class="py-1">Navbars</li>
+                    <li class="py-1">Cards</li>
+                    <li class="py-1">Buttons</li>
+                    <li class="py-1">Accordion</li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-lg-3 text-lg-end">
+                <h4>Social Media Links</h4>
+                <div class="social-media pt-2">
+                    <a href="https://web.facebook.com/" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://web.whatsapp.com/" class="text-light fs-2 me-3"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/id-ID/" class="text-light fs-2"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+          </div>
+
+            <hr>
+            <div class="text-center py-1">
+              <p>2023 © Rapublic Guide | Book Now !!!</p>
+            </div>
+    </div>
+    </footer>
+
+    <div class="modal fade" id="modalbandung">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <div class="row">
+
+        <div class="col-md-6 modal-gambar">
+          <img src="  bandung.jpg" class="img-fluid w-100 h-100 rounded-start">
+        </div>
+
+        <div class="col-md-6">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Bandung</h5>
+        </div>
+
+        <div class="modal-body">
+        <p>Bandung is a city worth visiting because it offers a creative atmosphere and a wide selection of interesting attractions. 
+          Explore the Braga area, featuring old buildings and art galleries. 
+          Bandung is also known for its factory outlet shopping centers, 
+          easily found along several main streets. Local dishes like batagor and mie kocok enhance the travel experience.</p>
+        </div>
+
+        <div class="modal-footer border-0">
+          <button class="btn btn-primary btn-outline-secondary text-light" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+        
+    <div class="modal fade" id="modaljkt">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <div class="row">
+
+        <div class="col-md-6 modal-gambar">
+          <img src="jakarta.jpg" class="img-fluid w-100 h-100 rounded-start">
+        </div>
+
+        <div class="col-md-6">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Jakarta</h5>
+        </div>
+
+        <div class="modal-body">
+        <p>As the capital city, Jakarta offers a vibrant, vibrant city experience every day. 
+          You can see the tall buildings in Sudirman, representing the central business district. 
+          Kota Tua offers a historical atmosphere with museums and old buildings. 
+          The National Monument (Monas) is a symbol of the city with its expansive park area.</p>
+        </div>
+
+        <div class="modal-footer border-0">
+          <button class="btn btn-primary btn-outline-secondary text-light" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modaljogja">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <div class="row">
+
+        <div class="col-md-6 modal-gambar">
+          <img src="jogja.jpg" class="img-fluid w-100 h-100 rounded-start">
+        </div>
+
+        <div class="col-md-6">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Yogyakarta</h5>
+        </div>
+
+        <div class="modal-body">
+        <p>Yogyakarta is a city worth visiting because its cultural life is evident in many places. 
+          You can see batik and silver crafts made directly by artisans. 
+          The palace (Keraton) demonstrates tradition with its regular daily activities. 
+          Malioboro offers a bustling atmosphere with vendors selling local products.</p>
+        </div>
+
+        <div class="modal-footer border-0">
+          <button class="btn btn-primary btn-outline-secondary text-light" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
